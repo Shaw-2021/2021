@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Price from './price';
 
 function App() {
+  const date=new Date();
+  const year=date.getFullYear();
+  const month=date.getMonth()+1;
+  const day=date.getDate();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Bitcoin</h1>
+      <Price></Price>
+      <div className='footer'>{day}/{month}/{year}</div>
     </div>
   );
 }
