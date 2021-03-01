@@ -4,6 +4,7 @@ import Price from './price';
 import HelloState from './HelloState';
 import HelloContext from './helloContext';
 import HelloReducer from './helloReducer';
+import StarRating from './star'
 
 export const UserContext=React.createContext();
 
@@ -21,7 +22,8 @@ function App() {
         </UserContext.Provider>
         <HelloState />
         <HelloReducer />
-        <Price />   
+        <StarRating />
+        {/* <Price />    */}
        
       <div className='footer'>{day}/{month}/{year}</div>
     </div>
